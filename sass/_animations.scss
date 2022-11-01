@@ -1,0 +1,40 @@
+@keyframes change-color-bg {
+  0% {
+    filter: blur(20rem);
+    @include bg-app(blue);
+  }
+
+  50% {
+    filter: blur(20rem);
+    @include bg-app(green);
+  }
+
+  100% {
+    filter: blur(20rem);
+    @include bg-app(yellow);
+  }
+}
+
+@keyframes change-border-color {
+  0% {
+    @include border-colors(blue);
+  }
+
+  50% {
+    @include border-colors(green);
+  }
+
+  100% {
+    @include border-colors(yellow);
+  }
+}
+
+@keyframes slide-top {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-40px);
+    }
+}

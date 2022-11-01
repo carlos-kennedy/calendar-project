@@ -1,0 +1,50 @@
+@mixin make-this-flex($val) {
+  @if $val == center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row;
+  } @else if $val == column {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+}
+
+// 1 #FFFFFFFF
+// 2 #d9d9d9cc
+
+@mixin gradient-text($color, $color2) {
+  background: linear-gradient(180deg, $color 0%, $color2 100%);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+@mixin bg-app($val) {
+  @if $val ==blue {
+    background: $bg-border-card-blue;
+  } @else if $val ==green {
+    background: $bg-border-card-green;
+  } @else if $val ==yellow {
+    background: $bg-border-card-yellow;
+  }
+}
+
+@mixin border-colors($val) {
+  @if $val ==blue {
+    border-bottom: $bg-border-card-blue 0.2rem solid;
+  } @else if $val ==green {
+    border-bottom: $bg-border-card-green 0.2rem solid;
+  } @else if $val ==yellow {
+    border-bottom: $bg-border-card-yellow 0.2rem solid;
+  }
+}
+
+@mixin position($val) {
+  @if $val == relative {
+    position: relative;
+  } @else if $val == absolute {
+    position: absolute;
+  }
+}
