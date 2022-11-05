@@ -32,7 +32,7 @@ div#app {
     @include make-this-flex(center);
     gap: 3.2rem;
     @include position(relative);
-    flex-flow: wrap;
+    flex-flow:column wrap;
     div {
       @include make-this-flex(column);
       gap: 6.1rem;
